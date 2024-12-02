@@ -1,0 +1,86 @@
+/* Estilos para la tabla */
+.table-container {
+  overflow-x: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse; /* Para evitar bordes duplicados */
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+  font-size: 17px;
+  border-bottom: 1px solid black !important; /* Línea negra entre las filas */
+}
+
+thead {
+  background-color: #0d6bc9; /* Color de fondo de los encabezados */
+  color: white; /* Texto blanco para los encabezados */
+}
+
+tbody {
+  color: black; /* Texto en color negro */
+  background-color: white; /* Fondo gris claro para las filas */
+}
+
+.activos-row{
+  background-color: #809bb7; /* Color de fondo de las filas de activos */
+}
+
+/* BOTON GENERAL*/
+.btnRegistro,.btnGuardar,.btnRegistro {
+  padding: 10px 20px;
+  background-color: #ee9b00;
+  color: black !important;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  text-decoration: none !important;
+}
+
+/* Estilo para la barra de búsqueda */
+.search-bar {
+  display: flex;
+  align-items: center; /* Centra verticalmente los formularios */
+  gap: 420px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ccc;
+}
+
+.search-container button {
+  background-color: #099c24;
+  border: 1px solid #099c24;
+  color: white;
+  padding: 10px;
+  height: 46px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+/* Estilo para el contenedor header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #4c70af;
+  color: white;
+}

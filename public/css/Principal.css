@@ -1,0 +1,145 @@
+/* Sidebar */
+.sidebar {
+  width: 50px;  /* Sidebar comprimido */
+  background-color: #002060;
+  transition: width 0.3s ; /* Transición suave del ancho */
+  position: fixed;
+  height: 100vh;
+  top: 0;
+}
+
+.sidebar.active {
+  width: 200px; /* Sidebar expandido */
+}
+
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 20px 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#toggleBtn {
+  font-size: 20px;
+  color: white;
+}
+
+/* Estilo para los iconos dentro del sidebar */
+.sidebar ul li i {
+  font-size: 20px;
+  color: white;
+}
+
+/* Alineación de los iconos y texto al expandirse */
+.sidebar.active ul li {
+  justify-content: flex-start;
+  padding: 20px 10px;
+}
+
+.sidebar ul li span {
+  display: none;
+}
+
+.sidebar.active ul li span {
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/* Efecto al pasar el mouse por encima de los elementos */
+.sidebar ul li:hover, .sidebar ul li button:hover {
+  background-color: #0047AB;
+  transition: background-color 0.3s ease;
+}
+
+/* Submenu */
+.submenu {
+  display: none;
+}
+
+.submenu.active {
+  display: block;
+}
+
+.submenu-option {
+  padding-left: 30px;
+}
+
+/* Contenido principal */
+.main-content {
+  font-family: Arial, sans-serif;
+  margin-left: 50px;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar.active ~ .main-content {
+  margin-left: 200px;
+}
+
+.sidebar ul li button {
+  background: none;
+  border: none;
+  margin-right: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+/* FIN SILDERBAR */
+
+/* Estilos para el contenedor header */
+.body{
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-container {
+  height: 70px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0047AB;
+  transition: margin-left 0.3s;
+}
+
+.user-info {
+  width: 300px; /* Ajusta el ancho del recuadro chico */
+  height: 56px;
+  display: flex;
+  margin-left: 600px;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #002060; /* Color del recuadro chico */
+}
+
+.img-contenedor {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.img-contenedor img {
+  height: 45px;
+}
+
+.divider {
+  height: 45px;
+  width: 4px;
+  margin-right: 8px;
+  background-color: white;
+}
+
+.user-details span {
+  color: hsl(0, 0%, 100%);
+  font-size: 16px;
+  margin-bottom: 1px;
+}

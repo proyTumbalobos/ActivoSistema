@@ -1,0 +1,78 @@
+/* Fondo de la ventana */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.form-background {
+    background-image: url('../img/FondoInicio.jpg'); /* Ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo suave con transparencia */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 500px; /* Ancho máximo del formulario */
+    width: 100%;
+    text-align: center; /* Centra el contenido del formulario */
+}
+
+/* Estilo del encabezado */
+.header h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo para los grupos de formulario */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Ancho unificado para todas las casillas del formulario */
+.form-group input,
+.form-group select,
+.form-group textarea,
+.form-group input[type="file"] {
+    width: 100%; /* Asigna el 100% del ancho del contenedor */
+    box-sizing: border-box; /* Asegura que padding y border se incluyan en el ancho */
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #ffffff;
+
+}
+
+/* Estilo del botón */
+.btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Fondo para la sección del formulario */
+textarea.form-control {
+    resize: none;
+}

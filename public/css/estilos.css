@@ -1,0 +1,75 @@
+body {
+    margin: 0; /* Elimina márgenes por defecto */
+    height: 100vh; /* Altura completa de la ventana */
+    background-image: url('../img/FondoInicio.jpg'); /* Cambia esto a la ruta de tu imagen de fondo */
+    background-size: cover; /* La imagen cubre toda la ventana */
+    background-position: center; /* Centra la imagen */
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+}
+
+.main-frame {
+    display: flex;
+    align-items: center;
+    padding-left: 155px; /* Espacio a la izquierda aumentado a 40px */
+}
+
+.login-box {
+    background-color: rgba(255, 255, 255, 0.686);
+    padding: 10px; /* Aumenta el espaciado interno del formulario */
+    border-radius: 20px; /* Bordes redondeados para el contenedor */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.782); /* Sombra más pronunciada */
+    width: 500px; /* Ajusta el ancho del formulario */
+    height: 450px;
+    font-size: 40px;
+}
+
+.icon-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.profile-img {
+    margin-top: 10px;
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: 150px; /* Mismo tamaño que el ancho para mantener la forma circular */
+    border-radius: 50%; /* Hace que la imagen sea circular */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+.form {
+    padding: 15px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.form-control {
+    flex: 1; /* Ocupa el espacio restante */
+    border: none; /* Sin borde */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    background-color: transparent; /* Sin color de fondo */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Sombra sutil para los campos de entrada */
+    height: 50px;
+}
+
+.form-control {
+    outline: none; /* Sin contorno en el enfoque */
+    background-color: rgba(169, 174, 255, 0.583);
+    margin-left: 10px;
+}
+
+.btn-info {
+    width: 100%; /* Botón ocupa todo el ancho */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}

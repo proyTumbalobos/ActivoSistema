@@ -1,0 +1,45 @@
+/* Casillas de búsqueda debajo del título */
+
+.fecha, .filtro {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    height: 50px;
+}
+/* Contenido en dos columnas */
+.row {
+    display: flex;
+    gap: 20px;
+    max-width: 100%; /* Limitar el ancho máximo */
+    overflow-x: hidden;
+}
+
+.column-left {
+    width: 70%; /* Ajustar el ancho para que no se salga del contenedor */
+    margin-left: 20px;
+    max-width: 100%;
+}
+.column-right {
+    background-color: rgb(211, 255, 211);
+    display: flex;
+    flex-direction: column; /* Dispone los elementos en columna */
+    margin-top: 10px;
+    padding: 15px 10px;
+}
+
+.column-header {
+    display: flex;
+    justify-content: space-between; /* Coloca los elementos en los extremos */
+    align-items: center; /* Centra verticalmente */
+    margin-bottom: 15px; /* Espacio debajo de la fila */
+}
+
+.download-btn {
+    padding: 10px 40px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

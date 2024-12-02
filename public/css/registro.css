@@ -1,0 +1,43 @@
+/* Formulario */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 5px 20px;
+}
+
+/* Cada fila del formulario */
+.row {
+    display: flex;
+    gap: 20px;
+    align-items: stretch; /* Asegura que todas las columnas tengan la misma altura */
+}
+
+/* Estilo de las columnas del formulario */
+.col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Aseguramos que las casillas tengan el mismo tamaño */
+input, select {
+    width: 100%; /* Hacer que los campos ocupen todo el ancho disponible */
+    padding: 10px; /* Agregar un poco de espacio dentro de las casillas */
+    box-sizing: border-box; /* Para que el padding no afecte el tamaño total del campo */
+    margin-top: 5px; /* Un pequeño espacio entre el label y el input */
+}
+
+/* Botones */
+.form-btn {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-btn:hover {
+    background-color: #45a049;
+}
