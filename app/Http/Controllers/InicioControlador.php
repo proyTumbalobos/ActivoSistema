@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class InicioControlador extends Controller
 {
-    public function verinicio()    {
-        return view('inicio');
-
+    public function __invoke()
+    {
+        return view('Inicio');
     }
 }
