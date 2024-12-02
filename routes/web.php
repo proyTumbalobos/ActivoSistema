@@ -14,8 +14,8 @@ use App\Http\Controllers\ControladorCategoria;
 use Illuminate\Support\Facades\Route;
 
 
+Route::get('/inicio', [InicioControlador::class,'verinicio'])->name('home');
 
-Route::get('/', InicioControlador::class)->name('home');
 
 //rutas incidencias
 Route::get('/Incidencia', [HomeIncidencias::class,'Inicio'])->name('Incidencia');
