@@ -46,7 +46,7 @@
 
     
     </div>
-    <!-- LLAMAR AL SILDERBAR PARA OPCIONES  -->
+    <!-- LLAMAR AL SILDERBAR PARA O33PCIONES  -->
     @yield('silderbar')
 
     <div class="main-content">
