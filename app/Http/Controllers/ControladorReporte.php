@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Ficha;
+use App\Models\ficha;
 use App\Models\Informe;
 use App\Models\TipoFicha;
 
@@ -20,9 +20,9 @@ class ControladorReporte extends Controller
     
         // Obtener todos los tipos de ficha
         $tiposFicha = TipoFicha::all();
-        $fichas = Ficha::with('activos')->get(); // Incluye los activos asociados a cada ficha
+        $fichas = ficha::with('activos')->get(); // Incluye los activos asociados a cada ficha
     
-        $queryFichas = Ficha::query();
+        $queryFichas = ficha::query();
         $queryInformes = Informe::query();
     
         // Filtro por fecha
@@ -62,7 +62,7 @@ class ControladorReporte extends Controller
     public function getDatosReporte(Request $request)
     {
         // Similar a lo que ya haces en el método Reporte, pero solo obtienes las fichas
-        $fichas = Ficha::with('activos')->get();
+        $fichas = ficha::with('activos')->get();
         return response()->json($fichas);
     }
     
