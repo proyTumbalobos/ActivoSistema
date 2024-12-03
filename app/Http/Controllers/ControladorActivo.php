@@ -34,7 +34,7 @@ class ControladorActivo extends Controller
     
             foreach ($activos as $activo) {
                 // Guardar cada activo en la base de datos
-                Activo::create([
+                activo::create([
                     'fechacompra' => $activo['fecha'],
                     'estado' => 'Activo',
                     'id_categoria' => $activo['tipoEquipo'],
