@@ -136,7 +136,7 @@
                     maintainAspectRatio: false,
                     scales: {
                         x: {
-                            beginAtZero: true, // Asegura que el eje X comienza desde cero
+                            beginAtZero: true, // Asegura que el eje X comienza desde cero3
                         },
                         y: {
                             beginAtZero: true, // Asegura que el eje Y comienza desde cero

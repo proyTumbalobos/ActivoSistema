@@ -82,7 +82,7 @@ class ControladorInforme extends Controller
     public function generarInforme(Request $request)
     {
         // Registrar datos en la base de datos
-        $activo = Activo::find($request->id_activo);
+        $activo = activo::find($request->id_activo);
         $activo->estado = 'Mantenimiento';  // Actualizar el estado del activo
         $activo->save();
 
@@ -96,7 +96,7 @@ class ControladorInforme extends Controller
         ]);
 
         // Generar el informe en formato Word
-        $activo = Activo::find($request->id_activo);
+        $activo = activo::find($request->id_activo);
         $persona = Persona::find($request->id_persona);
 
         // Verificar si el activo existe
