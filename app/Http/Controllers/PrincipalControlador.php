@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\activo;
 use Illuminate\Http\Request;
-use App\Models\Ficha;
+use App\Models\ficha;
 use App\Models\Informe;
 use App\Models\Incidencia;
 use App\Models\Area;
@@ -16,9 +16,9 @@ class PrincipalControlador extends Controller
     public function PanelControl()
     {
         // Obtener las estadísticas de las fichas
-        $fichasAsignadas = Ficha::where('id_tipo', 1)->count(); // Asignadas
-        $fichasDevueltas = Ficha::where('id_tipo', 2)->count(); // Devueltas
-        $fichasPrestadas = Ficha::where('id_tipo', 3)->count(); // Prestadas
+        $fichasAsignadas = ficha::where('id_tipo', 1)->count(); // Asignadas
+        $fichasDevueltas = ficha::where('id_tipo', 2)->count(); // Devueltas
+        $fichasPrestadas = ficha::where('id_tipo', 3)->count(); // Prestadas
 
         // Obtener las estadísticas de los informes
         $informesTecnicos = Informe::count();
