@@ -35,6 +35,7 @@
                 <!-- DATOS DEL USUARIO -->
                 <div class="user-details">
                     <span>{{ Auth::user()->nombre }}</span>
+                    <span>{{ Auth::user()->tipoPersona->nombre }}</span>
                 </div>
     
                 <div class="img-contenedor">
@@ -46,7 +47,7 @@
 
     
     </div>
-    <!-- LLAMAR AL SILDERBAR PARA O33PCIONES33  -->
+    <!-- LLAMAR AL SILDERBAR PARA MIS OPCIONES  -->
     @yield('silderbar')
 
     <div class="main-content">
