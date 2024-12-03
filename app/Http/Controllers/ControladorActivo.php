@@ -1,7 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 
-use App\Models\Activo;
+use App\Models\activo;
 use App\Models\CategoriaActivo;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
@@ -10,13 +10,13 @@ class ControladorActivo extends Controller
 {
     public function listaActivo()
     {
-        $activos = Activo::all();
+        $activos = activo::all();
         return view('ControlActivo/ListaActivo', compact('activos'));
     }
 
     public function buscar(Request $request)
     {
-        $activos = Activo::where('id', $request->id)->get();
+        $activos = activo::where('id', $request->id)->get();
         return view('ControlActivo/ListaActivo', compact('activos'));
     }
 
