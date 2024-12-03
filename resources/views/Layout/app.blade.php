@@ -35,7 +35,7 @@
                 <!-- DATOS DEL USUARIO -->
                 <div class="user-details">
                     <span>{{ Auth::user()->nombre }}</span>
-                    <span>{{ Auth::user()->tipoPersona->nombre }}</span>
+                    <span>{{ Auth::user()->tipoPersonas->nombre }}</span>
                 </div>
     
                 <div class="img-contenedor">
