@@ -86,7 +86,7 @@ class ControladorSolicitud extends Controller
     // ControladorActivo.php
     public function buscarActivo($codigo)
     {
-        $activo = Activo::where('id', $codigo)->with('categoria')->first();
+        $activo = activo::where('id', $codigo)->with('categoria')->first();
         return response()->json(['activo' => $activo]);
     }
     public function registrarFicha(Request $request)
