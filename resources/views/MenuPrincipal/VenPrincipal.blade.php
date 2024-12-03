@@ -147,7 +147,7 @@
                         tooltip: {
                             callbacks: {
                                 label: function(tooltipItem) {
-                                    // Mostrar el valor y modelo del activo en el tooltip
+                                    // Mostrar el valor y modelo del activo en TOLLTIP
                                     const nombre = tooltipItem.label;
                                     const valor = tooltipItem
                                         .raw; // El valor que está representado en la barra
