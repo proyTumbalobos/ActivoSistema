@@ -127,7 +127,7 @@
                         label: 'Ranking de Precios de Activos',
                         data: @json($activosPorPrecio->pluck('valor')->toArray()), // Precios de los activos
                         backgroundColor: 'rgba(54, 162, 235, 0.7)', // Color de las barras
-                        borderColor: 'rgba(54, 162, 235, 1)', // Borde de las barras
+                        borderColor: 'rgba(54, 162, 235, 1)', // Borde de las barras 3
                         borderWidth: 1
                     }]
                 },

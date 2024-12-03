@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Activo;
+use App\Models\activo;
 use App\Models\ficha;
 use App\Models\Persona;
 use App\Models\sede;
