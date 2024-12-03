@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\Area;
 use App\Models\CategoriaActivo;
 use App\Models\sede;
+use App\Models\Persona;
 use App\Models\TipoFicha;
 use Illuminate\Database\Seeder;
 
@@ -71,6 +72,20 @@ class DatabaseSeeder extends Seeder
         ]);
         TipoFicha::factory()->create([
             'nombre'=>'prestamo'
+        ]);
+
+        Persona::factory()->create([
+            'id' => 1,
+            'id_sede' => 1,
+            'id_area' => 1,
+            'dni' => '12345678',
+            'estado' => 0,
+            'nombre' => 'catalina',
+            'apellido' => 'tumbalobos',
+            'contraseña' => '$2y$10$WmsAhmqN5mUrvknA6yEHSe3DEv13CFpZ87YbKFjsgO3mNpQ7NKcuy', // Contraseña específica
+            'created_at' => '2024-11-20 22:44:34',
+            'updated_at' => null,
+            'idTipoPersona' => 1,
         ]);
 
         // \App\Models\User::factory(10)->create();
