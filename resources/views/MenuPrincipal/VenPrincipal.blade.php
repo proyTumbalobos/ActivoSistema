@@ -48,7 +48,7 @@
             const barChart = new Chart(barCtx, {
                 type: 'bar',
                 data: {
-                    labels: @json($incidenciasPorArea->pluck('area')->toArray()), // Nombres de las áreas
+                    labels: @json($incidenciasPorArea->pluck('area')->toArray()), // Nombres de
                     datasets: [{
                             label: 'Abiertas',
                             data: @json($incidenciasPorArea->pluck('abiertas')->toArray()), // Datos de incidencias abiertas
