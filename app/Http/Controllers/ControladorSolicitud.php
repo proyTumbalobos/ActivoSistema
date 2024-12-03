@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Activo;
-use App\Models\Ficha;
+use App\Models\ficha;
 use App\Models\Persona;
 use App\Models\sede;
 use App\Models\TipoFicha;
@@ -19,7 +19,7 @@ class ControladorSolicitud extends Controller
     {
         $fichas = ficha::all();
 
-        $queryFichas = Ficha::query();
+        $queryFichas = ficha::query();
 
         return view('ControlActivo/Fichas/FichaSolicitud', compact('fichas'));
     }
@@ -40,7 +40,7 @@ class ControladorSolicitud extends Controller
     public function descargarFicha($fichaId)
 {
     // Buscar la ficha por ID
-    $ficha = Ficha::findOrFail($fichaId);
+    $ficha = ficha::findOrFail($fichaId);
 
     $phpWord = new PhpWord();
     $section = $phpWord->addSection();
